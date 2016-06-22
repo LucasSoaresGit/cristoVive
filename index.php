@@ -21,9 +21,8 @@
 </head>
     
     <style>        
-        .container{
-            background-color: rgba(250,250,250,0.9);
-         
+        .container{            
+            background-image: url(img/c_v_pattern_back.jpg);
         }
         .body{
             background-image: url(img/c_v_cross_pattern.jpg);
