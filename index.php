@@ -25,7 +25,7 @@
             background-image: url(img/c_v_pattern_back.jpg);
         }
         .body{
-            background-image: url(img/c_v_cross_pattern.jpg);
+            background-image: url(img/c_v_back.jpg);
         }
     </style>
     
@@ -37,9 +37,8 @@
             <?php    include_once 'Views/viewMenu.php';    ?>  
         
         </div>
-        <div class="container">
-            <!--                div resultado recebe retorno dos ajax menus -->
-                <div id="resultado">
+        <div class="container" >            <!--                div resultado recebe retorno dos ajax menus -->
+                <div id="resultado" style="background-color: rgba(255,255,255,0.7)">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="col-sm-6">
@@ -53,11 +52,15 @@
                                 ?>
                             </div>
                         </div>    
-                    </div>   
+                    </div>
+                    
                 </div>
                 
             <!--   div de informações do download           -->
-            <div id="download"></div>
+            <div id="download"></div>            
         </div>
+        <?php
+            include_once 'Views/viewRodape.php';
+        ?>
     </body>
 </html>

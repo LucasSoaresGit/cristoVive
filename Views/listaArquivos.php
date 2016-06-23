@@ -25,8 +25,7 @@ foreach ($arrMin as $key => $value) { ?>
                         <a href="#" class="glyphicon glyphicon-remove" id="<?php echo $arrMin[$key]['id']; ?>" style="color: red;" alt="Apagar" onclick="deletar(this.id,0)"></a>&nbsp;&nbsp;&nbsp;
                         <?php } ?>
                     </div>                    
-                </div>
-                
+                </div>                
             </div>   
 
 <?php } ?>        

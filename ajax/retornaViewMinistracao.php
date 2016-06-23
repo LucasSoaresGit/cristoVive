@@ -28,9 +28,11 @@ include '../Views/uploadArquivos.php';
             </div>
         </div>    
     </div>
+    <div class="well-sm">
     <?php
         include '../Views/listaArquivos.php';      
     ?>
+    </div>
 </div>   
 
         
