@@ -19,7 +19,10 @@ foreach ($arrMin as $key => $value) {?>
                             <span class="glyphicon glyphicon-user"> <?php echo $arrMin[$key]['ministro']; ?></span>
                     </div>
                     <div class="col-lg-2 col-md-1">
-                        <a href="uploads/ministracoes/<?php echo $arrMin[$key]['arquivo']; ?>" class="glyphicon glyphicon-play" alt="Ouvir"></a>&nbsp;&nbsp;&nbsp;
+                    <audio controls>
+                      <source src="uploads/ministracoes/<?php echo $arrMin[$key]['arquivo']; ?>" type="audio/mp3">
+                      </audio>
+                         &nbsp;&nbsp;&nbsp;
                         <a href="uploads/ministracoes/<?php echo $arrMin[$key]['arquivo']; ?>" class="glyphicon glyphicon-download-alt" alt="Baixar" download></a>&nbsp;&nbsp;&nbsp;
                         <?php if ($sessionControler->confereMasterUser()) {?>
                         <a href="#" class="glyphicon glyphicon-remove" id="<?php echo $arrMin[$key]['id']; ?>" style="color: red;" alt="Apagar" onclick="deletar(this.id,0)"></a>&nbsp;&nbsp;&nbsp;
